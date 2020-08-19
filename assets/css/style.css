@@ -150,6 +150,8 @@ HOME BANNER
 .btnRed:hover {
     text-decoration: none;
     color: #ffffff;
+    background: #0a0a33;
+    border: 1px solid #0a0a33;
 }
 .btnWhite {
     text-align: center;
@@ -164,9 +166,104 @@ HOME BANNER
 }
 .btnWhite:hover {
     text-decoration: none;
-    color: #0a0a33;
+    color: #ffffff;
+    background: #0a0a33;
+    border: 1px solid #0a0a33;
 }
-
+.dot {
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;    
+}
+.dotpulsered {
+    transform: scale(1);
+    animation: pulse1 2s infinite;
+}
+.dotpulsegray{
+    transform: scale(1);
+    animation: pulse2 2s infinite;
+}
+.dot1{
+    background-color: #ff696f;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -50px;
+    right: 20%;
+}
+.dot2{
+    background-color: #aeaed8;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+.dot3{
+    background-color: #aeaed8;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+    left: 15%;
+}
+.dot4{
+    background-color: #ff696f;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 38%;
+    left: 88%;
+}
+.dot5{
+    background-color: #ff696f;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 36%;
+    left: 40%;
+}
+.dot6{
+    background-color: #aeaed8;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 88%;
+}
+.dot7{
+    background-color: #aeaed8;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+.dot8{
+    background-color: #ff696f;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;    
+    left: 70%;
+    top: 10px;
+}
 
 /* ======================
 CLIENT SLIDER
@@ -193,6 +290,18 @@ YEAR OF GROWTH
 .yearOfGrowth {
     position: relative;
     padding: 0 0 40px 0;
+}
+.yearOfGrowth:before {
+    content: '';
+    background-image: url(../img/logo_2.png);
+    background-repeat: no-repeat;
+    padding-bottom: 62px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: -28px;
+    background-size: cover;
+    top: 10%;
 }
 .yearOfGrowth .counterBox {
     background-color: #fae7e9;
@@ -380,8 +489,9 @@ HOME - CASESTUDY
 }
 .caseSlider .owl-dots   {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 40px;    
 }
+
 .caseSlider .owl-dot {
     margin: 0 10px;
     outline: none;
@@ -468,11 +578,26 @@ HOME - MEET THE CHIEF
 .meetcheaf .meetright {}
 .meetcheaf .meetright .imagewrap{
     text-align: right;
+    position: relative;
+    z-index: 1;
+}
+.meetcheaf .meetright .imagewrap:before {
+    content: '';
     background-image: url(../img/dot_image.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 19% 99%;
     padding-bottom: 62px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 79px;
+    bottom: -28px;
+    z-index: -1;
 }
 .meetcheaf .meetright .imagewrap img {
     height: 450px;
@@ -530,8 +655,331 @@ HOME - MEET THE CHIEF
 	}
 }
 
+@keyframes pulse1 {
+	0% {
+		transform: scale(0.50);
+		box-shadow: 0 0 0 0 rgba(229, 78, 127, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(229, 78, 127, 0);
+	}
+
+	100% {
+		transform: scale(0.50);
+		box-shadow: 0 0 0 0 rgba(229, 78, 127, 0);
+	}
+}
+
+@keyframes pulse2 {
+	0% {
+		transform: scale(0.50);
+		box-shadow: 0 0 0 0 rgba(174, 174, 216, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(174, 174, 216, 0);
+	}
+
+	100% {
+		transform: scale(0.50);
+		box-shadow: 0 0 0 0 rgba(174, 174, 216, 0);
+	}
+}
+
 @keyframes floating { 
     0% { transform: translate(0,  0px); } 
     50%  { transform: translate(0, 15px); } 
     100%   { transform: translate(0, -0px); }     
 } 
+
+
+/* ====================
+HOME - BLOG
+===================== */
+.hblog{
+    position: relative;
+    padding:100px 0 40px 0
+}
+.hblog:before {
+    content: '';
+    background-image: url(../img/logo_2.png);
+    background-repeat: no-repeat;
+    padding-bottom: 62px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 3%;
+    background-size: cover;
+    top: 23%;
+    transform: rotate(-47deg);
+}
+.blogwrap {
+    margin-top: 15px;
+}
+.hblog .blogbox {
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+.hblog .blogbox .blogimage {
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.hblog .blogbox .blogimage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.hblog .blogbox .blogdate {
+    color: #6a7176;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.hblog .blogbox .blogdate i.fa{
+    margin-right: 3px;
+}
+.hblog .blogbox h5{
+    color: #0a0a33;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.hblog .blogbox .blogsumm{
+    color: #5d5d5d;
+}
+.hblogslider {
+    box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.03);
+    background: rgba(0,0,0,0.03);
+}
+.hblogslider .owl-dots   {
+    text-align: center;
+    margin-top: 40px;
+}
+.hblogslider .owl-dot {
+    margin: 0 10px;
+    outline: none;
+}
+.hblogslider .owl-dots span {
+    width: 58px;
+    display: inline-block;
+    height: 6px;
+    background: #cacaca;
+    border-radius: 22px
+}
+.hblogslider .owl-dot.active span {
+    width: 58px;
+    display: inline-block;
+    height: 6px;
+    background: #cf3c3c;
+    border-radius: 22px
+}
+.hblogslider .owl-dots.disabled {
+    display: block !important;
+}
+.hblog .readmore {
+    margin-top: 20px;
+}
+.hblog .readmore a{
+    text-decoration: none;
+    color: #cf3c3c;
+}
+
+
+/* ====================
+HOME - ANALYSIS CONTACT
+===================== */
+.analysisContact {
+    background-color: #f8f8f8;
+    padding:50px 0;
+}
+.analysisContact .analysisLeft {}
+.analysisContact .analysisRight {}
+.analysisContact .analysisRight .imagewrap{
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+.analysisContact .analysisRight .imagewrap:before{
+    content: '';
+    background-image: url(../img/dot_image.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 19% 99%;
+    padding-bottom: 62px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 79px;
+    bottom: -28px;
+    z-index: -1;
+}
+.analysisContact .analysisRight .imagewrap img{
+    height: 450px;
+    display: inline-block;
+}
+.analysisContact .subtitle {
+    width: 100%;
+}
+.analysisContact .formwrap {}
+.analysisContact .formwrap .form-group{
+    margin-bottom: 20px;
+}
+.analysisContact .formwrap .form-control{
+    border: 0;
+    background-color: #ffffff;
+    padding: 0 20px;
+    height: 45px;
+    font-weight: 300;
+}
+.btnchecknow {
+    background-color: #cf3c3c;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 7px 25px;
+    border:0;
+    outline: none;
+    font-weight: 300;
+    height: 45px;
+}
+
+
+/* ====================
+HOME - CONTACT CTA
+===================== */
+.hcontactinfo {
+    padding: 60px 0;
+    position: relative;
+}
+.hcontactinfo .cbox {
+    
+}
+.hcontactinfo .cbox .titleconact{
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.hcontactinfo .cbox .titleconact i.fa{
+    margin-right: 10px;
+}
+.hcontactinfo .cbox .coninfo {
+    color: #9e9e9e;
+    font-weight: 300;
+    padding-left: 24px;
+}
+.hcontactinfo .border {
+    border-bottom: 1px solid #9e9e9e;
+    margin: 35px 0 0 0;
+}
+
+/* ====================
+HOME - FOOTER
+===================== */
+.sitefooter {
+    position: relative;
+    padding: 20px 0 40px 0;
+}
+.sitefooter .textcenter {
+    text-align: center;
+}
+.sitefooter .footerwidget {
+    display: inline-block;
+    text-align: left;
+}
+.sitefooter .footerwidget .footerlogo {
+    margin-bottom: 25px;
+}
+.sitefooter .footerwidget .footerlogo img{}
+.sitefooter .footerwidget .footerlogo a{
+    text-decoration: none;
+}
+.sitefooter .footerinfo {
+    color: #9e9e9e;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+.sitefooter .foosocialwrap {
+    
+}
+.sitefooter .sociallist{
+
+}
+.sitefooter .sociallist li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+.sitefooter .sociallist li a{
+    font-weight: 600;
+    font-size: 24px;
+}
+.sitefooter .sociallist li a i.fa{}
+.sitefooter .sociallist .facebook{
+    color: #1263af !important;
+}
+.sitefooter .sociallist .instagram{
+    color: #32d1e9 !important;
+}
+.sitefooter .sociallist .twitter{
+    color: #cf3c3c !important;
+}
+.sitefooter .sociallist .linkedin{
+    color: #1a7b9b !important;
+}
+.sitefooter .footTitle {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0a0a33;
+}
+.sitefooter .footList {}
+.sitefooter .footList li{
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+.sitefooter .footList li a{
+    color: #9e9e9e;
+    text-decoration: none;    
+    font-weight: 300;
+}
+.sitefooter .footList li a:hover{}
+
+
+
+/* =================
+COPYRIGHT
+================== */
+.copyright {
+    background-color: #131c43;
+    padding: 40px 0;
+    position: relative;
+}
+.copyright:after {
+    content: '';
+    background-image: url(../img//footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: absolute;
+    height: 186px;
+    width: 312px;
+    top: -110px;
+    right: 0;
+}
+.copyright .copyrightText {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 13px;
+}
