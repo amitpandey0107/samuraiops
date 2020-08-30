@@ -46,6 +46,7 @@ HEADER
     position: relative;
     height: 80px;
     padding: 10px;
+    z-index: 9;
 }
 .siteHeader .logo{
     position: relative;
@@ -94,6 +95,78 @@ HEADER
     text-decoration: none;
     color: #ffffff;
     background: #0a0a33;
+}
+
+.mobileMenu {
+    position: absolute;
+    width: 50px;
+    text-align: right;
+    line-height: 15px;
+    display: none;
+    cursor: pointer;
+}
+.mobileMenu span {
+    display: inline-block;
+    height: 6px;    
+    margin-bottom: 1px;
+    background-color: #cc1526;
+    border-radius: 5px; 
+}
+.mobileMenu span:nth-child(1) {
+    width: 100%;
+}
+.mobileMenu span:nth-child(2) {
+    width: 80%;
+}
+.mobileMenu span:nth-child(3) {
+    width: 60%;
+}
+
+.menuclose {
+    position: absolute;
+    width: 38px;
+    right: 15px;
+    line-height: 15px;
+    display: none;
+    cursor: pointer;
+    top: 30px;
+}
+.menuclose span {
+    display: inline-block;
+    height: 6px;    
+    margin-bottom: 1px;
+    background-color: #ffffff;
+    border-radius: 5px; 
+}
+.menuclose span:nth-child(1) {
+    width: 100%;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.menuclose span:nth-child(2) {
+    width: 100%;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.bodyoverlay {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.bodyoverlay:after {
+    content: '';
+    background-color: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -987,7 +1060,9 @@ HOME - FOOTER
     text-decoration: none;    
     font-weight: 300;
 }
-.sitefooter .footList li a:hover{}
+.sitefooter .footList li a:hover{
+    color: #cf3c3c;
+}
 
 
 
@@ -1060,3 +1135,383 @@ ANIMATIONS
     }
   }
   
+
+
+/* ====================
+Services V2
+===================== */
+.servicesv2 {
+    position: relative;
+    padding: 40px 0;
+}
+.servicesv2 .sbox {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    height: 200px;
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.servicesv2 .sbox .icon {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.servicesv2 .sbox  h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.servicesv2 .beforehover {
+    display: inline-block;
+}
+.servicesv2 .afterhover {
+    display: none;
+}
+.servicesv2 .sbox:hover {
+    background-color: #cc1526;
+}
+.servicesv2 .sbox:hover  .beforehover {
+    display: none !important;
+}
+.servicesv2 .sbox:hover  .afterhover {
+    display: inline-block !important;
+}
+
+.servicesv2 .sbox:hover h4 {
+    color: #ffffff;
+}
+.servicesv2 .sbox:hover p {
+    color: #ffffff;
+}
+.servicesv2 .sbox .icon img {
+    height: 70px;
+}
+.arrowMore{
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 26px;
+    line-height: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #000000;
+}
+.arrowMore:focus,
+.arrowMore:active {
+    outline: none;
+    border:0;
+}
+.servicesv2 .sbox:hover .arrowMore {
+    color: #ffffff;
+}
+.servicesv2 .meetcheaf .meetright .imagewrap {
+    text-align:left;
+}
+.servicesv2 .meetcheaf .meetright .imagewrap:before {
+    right: 11px !important;
+    bottom: -1px !important;
+    left: auto !important;
+}
+.servicesv2 .sboxactive {
+    background-color: #cc1526;
+}
+.servicesv2 .sboxactive h4 {
+    color: #ffffff;
+}
+.servicesv2 .sboxactive  p {
+    color: #ffffff;
+}
+.servicesv2 .sboxactive .arrowMore {
+    color: #ffffff;
+}
+
+.servicesv2 .sboxactive .beforehover {
+    display: none !important;
+}
+.servicesv2 .sboxactive .afterhover {
+    display: inline-block !important;
+}
+
+.servicesv2 .mtext {
+    margin-bottom: 15px;
+}
+.servicesv2 .boxshad {
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+.meetcheaf.boxshad:before {
+    /* content: '';
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #ff5a6f;
+    position: absolute;
+    top: -16px;
+    left: 6%; */
+}
+
+.servicesv2 .boxshad {
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);
+    padding: 15px;
+    position: relative;
+    border-radius: 8px;
+}
+.servicesv2 .bigboxactive {
+    background-color: #cc1526;
+}
+.servicesv2 .bigboxactive .title .titleSmall {
+    color: #ffffff;
+}
+.servicesv2 .bigboxactive .title .mainTitle {
+    color: #ffffff;
+}
+.servicesv2 .bigboxactive .title .subtitle {
+    color: #ffffff;
+}
+.servicesv2 .bigboxactive .meetleft .mtext{
+    color: #ffffff;
+}
+
+
+/* =========================
+DIGITAL MARKETING
+========================== */
+.innerBanner{
+    text-align: center;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: -100px;
+}
+.innerBanner:after{
+    content: '';
+    background-color: rgba(255,255,255,0.8);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.innerBanner .ibannercontent {
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.innerBanner .bredcomb{
+    margin-bottom: 20px;
+}
+.innerBanner .bredcomb li{
+    list-style-type: none;
+    display: inline-block;
+    color: #cd1728;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+.innerBanner .bredcomb li a{
+    color: #cd1728;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.innerBanner .bredcomb li a:hover{}
+.innerBanner .bannerTitle {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+
+/* =====================
+SAMURAI PROCESS
+======================= */
+.process {
+    position: relative;
+    padding: 50px 0;
+}
+.processlist {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.processlist li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 15px;  
+}
+.processlist .process_img img{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.processlist .pocess_arrow {
+}
+.processlist h4 {
+    color: #0a0a33;
+    font-size: 18px;
+    
+}
+.whyUs {
+    position: relative;
+}
+.whyUs .whytext{
+    padding-left: 40px;
+    margin-bottom: 35px;
+}
+.whyUs .whytext .wtitle{
+    color: #e4505a;
+    margin-bottom: 10px;
+    position: relative;
+}
+.whytext .wtitle:before {
+    content: "\f00c";
+    color: #e4505a;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    left: -35px;
+    top: 2px;
+    position: absolute;
+    font-size: 21px;
+}
+.whyUs .whytext .wtxt{
+    color: #6a7176;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+/* =================
+Additional Service
+================== */
+.addService {
+    position: relative;
+    padding: 40px 0;
+}
+.addServiceSlider .itemwrap {
+    height: 320px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.addServiceSlider .itemwrap  img {
+    width: 150px;
+    display: inline-block;
+}
+.addServiceSlider .csimage {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.addServiceSlider .cswrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.addServiceSlider .subtitle {
+    font-size: 24px;
+}
+
+
+
+
+/* =======================
+PRICING
+======================== */
+.pricingtable {
+    position: relative;
+    padding: 50px 0;
+}
+.pricingtable .pricingbox {
+    background-color: #ffffff;
+    min-height: 500px;
+    box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 30px 15px;
+    text-align: center;
+}
+.pricingtable .pricingbox h4 {   
+    color: #cc1526;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    border-bottom: 1px solid #cc1526;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricingbox .rate{
+    color: #414141;
+    margin-bottom: 30px;    
+}
+.pricingbox .rate i.fa {
+    font-size: 24px;
+    position: relative;
+    top: -42px;
+}
+.pricingbox .rate .big {
+    font-size: 85px;
+    font-weight: 300;
+}
+.pricingbox .rate .small{
+    font-size: 24px;
+}
+.pricingbox .rate .yearmon{
+    font-size: 24px;
+}
+.pricingbox .ptext {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.pricingbox .ptext .darkgrey{
+    color: #414141;
+}
+.pricingbox .ptext .grey{
+    color: #bab0b0;
+}
+.buyNow {
+    background-color: #cc1526;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    height: 50px;
+    display: inline-block;
+    width: 180px;
+}
+.buyNow:hover {
+    background-color: #414141;
+    color: #ffffff;
+    text-decoration: none;
+}
+.pricingbox .btnwrp {
+    margin-top: 40px;
+}
+.cust_package {
+    background: #ffffff;
+    height: 150px;
+    box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.5);
+    margin-top: 40px;
+    line-height: 145px;
+    padding: 0px 25px;
+}
+.cust_package h4 {
+    color: #0a0a33;
+    font-size: 42px;
+    line-height: 143px;
+}

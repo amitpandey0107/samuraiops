@@ -10,7 +10,10 @@ $(document).ready(function () {
                     items:1
                 },
                 600:{
-                    items:3
+                    items:2
+				},
+				700:{
+                    items:2
                 },
                 1000:{
                     items:4
@@ -47,7 +50,7 @@ $(document).ready(function () {
                     items:1
                 },
                 600:{
-                    items:3
+                    items:1
                 },
                 1000:{
                     items:6
@@ -57,10 +60,10 @@ $(document).ready(function () {
 
 
 
-	// Toggle Menu
-	$('.mobileicon').on('click', function () {
-		$('.menuwrap').toggle();
-	});
+	// // Toggle Menu
+	// $('.mobileMenu').on('click', function () {
+	// 	$('.siteHeader .menuWrap').toggle();
+	// });
 
 	$('.carousel').carousel({	
 		buttonNav: 'bullets',
@@ -109,9 +112,9 @@ $(document).ready(function () {
 
 
 	// Toggle Main Menu for Mobile View
-	jQuery('#mobilemenu').on('click tap', function() {
-		jQuery('.menuwrap').show();
-		// jQuery('.fullMenu').show('slide', {direction: 'right'}, 500); 
+	jQuery('.mobileMenu').on('click tap', function() {
+		jQuery('.menuWrap').show();
+		// jQuery('.menuwrap').show('slide', {direction: 'right'}, 500); 
 	    // jQuery(this).hide('slide', {direction: 'right'}, 500);
 	    setTimeout(function(){ 
 	    	jQuery('body').addClass('bodyoverlay');
@@ -119,9 +122,9 @@ $(document).ready(function () {
 	    
 	});
 
-	jQuery('#closeme').on('click tap', function() {
-		jQuery('.menuwrap').hide();
-		// jQuery('.fullMenu').hide('slide', {direction: 'right'}, 500); 
+	jQuery('.menuclose').on('click tap', function() {
+		jQuery('.menuWrap').hide();
+		// jQuery('.menuwrap').hide('slide', {direction: 'right'}, 500); 
 		// jQuery('.mobileMenu').show('slide', {direction: 'right'}, 500);
 		setTimeout(function(){ 
 	    	jQuery('body').removeClass('bodyoverlay');

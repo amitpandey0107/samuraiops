@@ -1,0 +1,142 @@
+@media only screen and  (max-width:1080px) {
+
+}
+
+@media only screen and  (max-width:991px)  {
+    .mobileMenu {
+        display: inline-block;
+        right: 0;
+        top: 5px;
+    }
+    .copyright .copyrightText {
+        z-index: 1;
+        position: relative;
+    }
+
+    .siteHeader .menuWrap {
+        padding-top: 11px;
+        margin: 0;
+        border: 0;
+        text-align: left;
+        width: 40%;
+        position: fixed;
+        z-index: 99;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        background: #0a0a33;
+        display: none;
+        padding-top: 40px;
+    }
+    .siteHeader .menuWrap .mainMenu  {
+        text-align: left;
+    }
+    .siteHeader .menuWrap .mainMenu li {
+        list-style-type: none;
+        display: block;
+        padding: 15px 15px;
+    }
+    .siteHeader .menuWrap .mainMenu li a{
+       color: #ffffff;
+       display: block;
+    }
+    .siteHeader .menuWrap .mainMenu li a:hover {
+        color: #cc1526;
+    }
+    .mainMenu li.menuContact a:hover {
+        text-decoration: none;
+        color: #0a0a33;
+        background: #ffffff;
+    }
+    .menuclose {
+        display: inline-block;
+    }
+
+    .homeBanner .bannerContent {
+        width: 100%;
+        display: block;
+        z-index: 9;
+    }
+    .homeBanner .bgImage img {
+        height: 510px;
+        opacity: 0.4;
+    }
+    .homeBanner .bannerContent .bannerText {
+        color: #000000;
+    }
+    .homeBanner .btnWhite {
+        text-decoration: none;
+        color: #ffffff;
+        background: #0a0a33;
+        border: 1px solid #0a0a33;
+    }
+    .yearOfGrowth .counterwrap {
+        width: 100%;
+    }
+    .yearOfGrowth .counterBox {
+        height: 250px;
+        width: 250px;
+        padding-top: 84px;       
+    }
+    .meetcheaf .meetright .imagewrap {
+        text-align: center;
+    }
+    .meetcheaf .meetright .imagewrap:before {
+        left: 34px;
+    }
+    .analysisContact .analysisRight .imagewrap {
+        text-align: center;       
+    }
+    .analysisContact .analysisRight .imagewrap:before {
+        left: 34px;
+    }
+    .hcontactinfo .cbox {
+        margin-bottom: 40px;
+    }
+    .hcontactinfo .border {
+        margin: 5px 0 0 0;
+    }
+    .sitefooter .footerwidget {
+        margin-bottom: 40px;
+        display: block;
+    }
+    .meetcheaf .meetright {
+        margin-top: 40px;
+    }
+    .title .subtitle {
+        width: 100%;
+    }
+    .siteHeader .menuWrap {
+        width: 60%;
+    }
+
+}
+
+
+
+@media only screen and  (max-width:691px) {
+    .homeBanner .bannerContent h1 {
+        font-size: 42px;
+    }
+    .yearOfGrowth .counterBox {
+        height: 200px;
+        width: 200px;
+        padding-top: 60px;
+    }
+    .yearOfGrowth .counterwrap:after {
+        right: 10px;
+    }
+    .title .mainTitle {
+        font-size: 34px;
+    }
+    .casestudy .titleSmall {
+        font-size: 22px;
+    }
+    .analysisContact .analysisRight .imagewrap:before {
+        left: -24px;
+    }
+    .meetcheaf .meetright .imagewrap:before {
+        left: -24px;
+    }
+}
