@@ -139,4 +139,39 @@
     .meetcheaf .meetright .imagewrap:before {
         left: -24px;
     }
+    .processlist {
+        flex-direction: column;
+    }
+    .processlist .pocess_arrow {
+        transform: rotate(90deg);
+        margin: 52px 0;
+    }
+    .pricingtable .pricingbox {
+        margin-bottom: 40px;
+    }
+    .cust_package {
+        height: auto;
+        line-height: inherit;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .cust_package h4 {
+        line-height: initial;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .addService {
+        padding-bottom: 60px;
+    }
+    .pricingbox .rate .big {
+        font-size: 65px;
+        font-weight: 300;
+    }
+    .pricingbox .rate i.fa {
+        top: -29px;
+    }   
+    .pricingtable:before {
+        top: 0;
+    }
+    
 }

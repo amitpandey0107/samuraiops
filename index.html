@@ -45,7 +45,7 @@
                         <ul class="mainMenu">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
+                            <li><a href="digital-marketing.html">Services</a></li>
                             <li><a href="portifolio.html">Portifolio</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li class="menuContact"><a href="contact.html">Contact Us</a></li>
@@ -60,6 +60,11 @@
     BANNER
     ================================ -->
     <section class="homeBanner">
+
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -181,7 +186,7 @@
     <!-- ===============================
     SERVICES
     ================================ -->
-    <section class="hservices">
+    <section class="hservices" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -429,7 +434,10 @@
                                         <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                             sed do eiusmod tempor incididunt ut labore.</div>
                                     </div>
-                                    <div class="mtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut m ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    <div class="mtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut m ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute
                                         irure dolorin reprehenderit in voluptate velit esse cillum dolore eu </div>
 
                                     <div class="mtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -798,7 +806,8 @@
                     <div class="title text-center">
                         <h4 class="titleSmall">Blog</h4>
                         <h1 class="mainTitle">Read Our Latest News</h1>
-                        <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod empor incididunt ut labore.</div>
+                        <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            empor incididunt ut labore.</div>
                     </div>
                 </div>
             </div>
@@ -819,7 +828,8 @@
                                     </div>
                                     <h5>How to Increase your ROI through scientific SEM</h5>
                                     <div class="blogsumm">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore.
                                     </div>
                                     <div class="readmore">
                                         <a href="javascript:;">Read More...</a>
@@ -1189,7 +1199,7 @@
         }
     })
 
-    jQuery(document).ready(function(){
+    jQuery(document).ready(function () {
         jQuery('#content1').hide();
         jQuery('#content2').hide();
         jQuery('#content3').hide();
@@ -1198,7 +1208,7 @@
         jQuery('#content6').hide();
 
 
-        jQuery('#s1').on('click', function() {
+        jQuery('#s1').on('click', function () {
             jQuery(this).toggleClass('sboxactive');
             jQuery('#s2').removeClass('sboxactive');
             jQuery('#s3').removeClass('sboxactive');
@@ -1219,7 +1229,7 @@
             jQuery('#content6').removeClass('bigboxactive');
         })
 
-        jQuery('#s2').on('click', function() {
+        jQuery('#s2').on('click', function () {
             jQuery(this).toggleClass('sboxactive');
             jQuery('#s1').removeClass('sboxactive');
             jQuery('#s3').removeClass('sboxactive');
@@ -1240,7 +1250,7 @@
             jQuery('#content6').removeClass('bigboxactive');
         })
 
-        jQuery('#s3').on('click', function() {
+        jQuery('#s3').on('click', function () {
             jQuery(this).toggleClass('sboxactive');
             jQuery('#s1').removeClass('sboxactive');
             jQuery('#s2').removeClass('sboxactive');
@@ -1261,7 +1271,7 @@
             jQuery('#content6').removeClass('bigboxactive');
         })
 
-        jQuery('#s4').on('click', function() {
+        jQuery('#s4').on('click', function () {
             jQuery(this).toggleClass('sboxactive');
             jQuery('#s1').removeClass('sboxactive');
             jQuery('#s2').removeClass('sboxactive');
@@ -1282,7 +1292,7 @@
             jQuery('#content6').removeClass('bigboxactive');
         })
 
-        jQuery('#s5').on('click', function() {
+        jQuery('#s5').on('click', function () {
             jQuery(this).toggleClass('sboxactive');
             jQuery('#s1').removeClass('sboxactive');
             jQuery('#s2').removeClass('sboxactive');
@@ -1303,7 +1313,7 @@
             jQuery('#content6').removeClass('bigboxactive');
         })
 
-        jQuery('#s6').on('click', function() {
+        jQuery('#s6').on('click', function () {
             jQuery(this).toggleClass('sboxactive');
             jQuery('#s1').removeClass('sboxactive');
             jQuery('#s2').removeClass('sboxactive');
