@@ -1692,6 +1692,7 @@ PRICING
     color: #0a0a33;
     font-size: 42px;
     line-height: 143px;
+    text-align: center;
 }
 
 .pricingtable:before {
@@ -1801,4 +1802,299 @@ ANIMATIONS
   to {
     transform: translateY(-2000px);
   }
+}
+
+
+
+/* ==========================
+CUSTOMER SUPPORT
+========================== */
+.customerSupport {
+    position: relative;
+    padding: 50px 0;
+}
+.customerSupport .title .subtitle {
+    width: 100%;
+}
+.customerSupport .title .mainTitle {
+    text-transform: uppercase;
+}
+.customerSupport .customer_image {
+    text-align: center;
+}
+.customerSupport .customer_image img {
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: cover;    
+}
+.customerSupport .btnWrap {
+    text-align: center;
+    margin-top: 30px;
+}
+.customerSupport .btnWrap span {
+    display: block;
+    margin-top: 5px;
+}
+.startBtn {
+    background-color: #cc1526;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.startBtn:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: #0a0a33;
+}
+.customerSupport:before {
+    content: '';
+    background-image: url(../img/logo_2.png);
+    background-repeat: no-repeat;
+    padding-bottom: 62px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: -28px;
+    background-size: cover;
+    top: 10%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.customerSupport:after {
+    content: '';
+    position: absolute;
+    right: 5%;
+    top: 36%;
+    border-radius: 50%;
+    border: 12px solid rgba(255,90,111,0.05);
+    padding: 16px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* ==============================
+ Feature & Attributes of desky
+ ============================== */
+.featureAttributes {
+    position: relative;
+    padding: 50px 0;
+}
+.attriTitle {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.featureAttributes .featuredBox {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+}
+.featureAttributes .featuredBox .circle {
+    border-radius: 50%;
+    border: 2px solid #cc1526;
+    height: 60px;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    line-height: 55px;
+    margin-right: 20px;
+}
+.featureAttributes .featuredBox .circle .blue{
+    background-color: #7152ff;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+.featureAttributes .featuredBox .circle .red{
+    background-color: #cf3c3c;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+.featureAttributes .featuredBox .circle .skyblue{
+    background-color: #59eecd;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+.featureAttributes .featuredBox .text{
+    position: relative;
+}
+.featureAttributes .featuredBox .text .attrHead{
+    color: #cc1526;
+    font-size: 21px;
+}
+.featureAttributes .featuredBox .text .attrText{
+    color: #70797f;
+}
+.custSupportServices {
+    padding: 20px 0 50px 0;
+}
+.featureAttributes:after {
+    content: '';
+    position: absolute;
+    right: 3%;
+    top: 9%;
+    border-radius: 50%;
+    border: 10px solid rgba(255,90,111,0.05);
+    padding: 35px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: -99;
+}
+
+/* ==============================
+ FREE ACCESS
+ ============================== */
+.freeaccess {
+    position: relative;
+    margin-bottom: 40px;
+}
+.freeaccess .cust_package h4 {
+    text-transform: uppercase;
+    color: #0a0a33;
+    font-size: 24px;
+    line-height: initial;
+    margin-top: 42px;
+    text-align: left;
+}
+.freeaccess .cust_package h4 span {
+    color: #cc1526;
+}
+.freeaccess .cust_package {
+    margin-top: 0;
+    border-radius: 10px;
+}
+
+
+/* ==============================
+ BY NUMBER
+============================== */
+.byNumber {
+    position: relative;
+    padding: 40px 0 40px 0;
+}
+.byNumber .mainTitle {
+    text-transform: uppercase;
+}
+.byNumber .byNumBox {
+    text-align: center;
+}
+.byNumber .byNumBox .number{
+    color: #cc1526;
+    font-size: 32px;
+}
+.byNumber .byNumBox .numText{
+    color: #70797f;
+}
+.byNumber .title {
+    padding-bottom: 20px;
+}
+
+
+/* =====================
+How will it help
+======================= */
+.itHelp {
+    position: relative;
+    margin: 40px 0 0 0;
+}
+.itHelp .whytext .wtitle {
+    color: #000000;
+    margin-bottom: 0;
+    position: relative;
+    font-size: 16px;
+}
+.itHelp .whytext {
+    margin-bottom: 20px;
+}
+.itHelp .whytext .wtitle:before {
+    content: "\f00c";
+    color: #e4505a;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    left: -30px;
+    top: 1px;
+    position: absolute;
+    font-size: 18px;
+}
+.itHelp .meetright .imagewrap img {
+    height: auto;
+}
+.itHelp .meetright .imagewrap:before {
+    left: 27px;
+}
+.serviceCase {
+    margin-top: 50px;
+}
+
+
+/* ==================
+SAVE TIME
+================== */
+.saveTime {
+    padding: 50px 0;
+    position: relative;
+}
+.textUppercase {
+    text-transform: uppercase;
+}
+.savetimeBox {
+    display: flex;
+    align-items: center;
+}
+.savetimeBox .icon{
+    margin-right: 20px;
+}
+.savetimeBox .icon img{}
+.savetimeBox .savtext{}
+.savetimeBox  .savtext p {}
+
+/* ==================
+Seamless integration
+================== */
+.seamless {
+    padding: 50px 0;
+    position: relative;
+    box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.04);
+    background: rgba(0,0,0,0.03);
+}
+.seamless .subtitle{
+    width: 100%;
+}
+.logoBox {
+    height: 120px;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.logoBox  img {
+    height:45px;
+}
+.seamless .btnWrap {
+    margin-top: 10px;
+    text-align: center;
 }
