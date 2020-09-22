@@ -789,7 +789,7 @@ HOME - MEET THE CHIEF
 .meetcheaf .meetright .imagewrap img {
     height: 450px;
     display: inline-block;
-    
+    border-radius: 15px;
 }
 .meetcheaf .meetleft .mplaywrap {
     margin-top: 50px;
@@ -2097,4 +2097,207 @@ Seamless integration
 .seamless .btnWrap {
     margin-top: 10px;
     text-align: center;
+}
+
+
+/*=== Process Management ===*/
+.serviceText {
+    text-align: center;
+    padding: 100px 0 10px 0;
+    position: relative;
+}
+.serviceTitleWrap .servicetitle {
+    color: #0a0a33;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.serviceTitleWrap .serviceInfo{
+    text-align: center;
+    color: #70797f;
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
+}
+.serviceText:before {
+    content: '';
+    background-image: url(../img/logo_2.png);
+    background-repeat: no-repeat;
+    padding-bottom: 62px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: -28px;
+    background-size: cover;
+    top: 40%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+/*==== Used Cases ====*/
+.usedCases {
+    position: relative;
+    padding-bottom: 90px;
+}
+.usedCases .usedBox  {
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+}
+.usedCases .usedBox .usedIcon {
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+.usedCases .usedBox .usedIcon img{
+    height: 100px;
+    width: 100px;
+}
+.usedCases .usedBox .usedText h4{
+    color: #cc1526;
+    font-size: 22px;
+    font-weight: 600;
+}
+.usedCases .usedBox .usedText .txt{
+    color: #70797f;
+}
+
+
+.onboardingProcess {
+    position: relative;
+    padding: 40px 0;
+}
+.onboardingProcess .opBox {
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);
+    padding: 20px;
+    min-height: 250px;
+    text-align: center;
+}
+.onboardingProcess .opBox .oicon {    
+    text-align: center;
+    margin-bottom: 10px;
+}
+.onboardingProcess .opBox .oicon img{
+    display: inline-block;
+}
+.onboardingProcess .opBox h4 {
+    color: #cc1526;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.onboardingProcess .opBox p {
+    color: #70797f;
+}
+
+/* ==== credibility ==== */
+.credibility {
+    position: relative;
+    padding: 40px 0 50px 0;
+}
+.credibility .credBox {
+    text-align: center;
+}
+.credibility .credBox h3 {
+    color: #cc1526;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.credibility .credBox p {
+    color: #000000;
+}
+.usedCasesSlider .owl-dots   {
+    text-align: center;
+    margin-top: 40px;    
+}
+
+.usedCasesSlider .owl-dot {
+    margin: 0 10px;
+    outline: none;
+}
+.usedCasesSlider .owl-dots span {
+    width: 58px;
+    display: inline-block;
+    height: 6px;
+    background: #cacaca;
+    border-radius: 22px
+}
+.usedCasesSlider .owl-dot.active span {
+    width: 58px;
+    display: inline-block;
+    height: 6px;
+    background: #cf3c3c;
+    border-radius: 22px
+}
+.usedCasesSlider .item {
+    padding: 11px;
+}
+
+/* === Data Clearing ===*/
+.dataClearing {
+    position: relative;
+    padding: 30px 0 80px 0;
+}
+.dataClearing .dImageBox {
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);
+    padding: 20px;
+    min-height: 550px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dataClearing .dataInfoWrap {
+    position: relative;
+}
+.dataClearing .dataInfoWrap h3 {
+    color: #cc1526;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.dataClearing .dataInfoWrap p {
+    color: #00000;
+    margin-bottom: 20px;
+}
+.dataClearing .dataInfoWrap .tabwrp {
+    position: relative;
+}
+.dataClearing  .panel-heading {
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);
+    color: #000000;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+}
+.dataClearing  .panel-heading a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding-right: 30px;
+}
+.dataClearing  .panel-heading a span {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.disFlex {
+    display: flex;
+}
+.dataClearing  .panel-heading a i.fa {
+    position: absolute;
+    right: 15px;
+    -webkit-text-stroke: 2px #f5f7fa;
+}
+.tabwrp .panel-group .panel:last-child > .panel-heading {
+    margin-bottom: 0;
 }
